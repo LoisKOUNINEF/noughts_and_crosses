@@ -29,10 +29,10 @@ class Game
         puts "#{@players[0].name} wins !"
       elsif @board.victory? == 2
         puts "#{@players[1]. name} wins !"
+      else
+        puts "Draw."
       end
-      exit
     end
-    puts "Draw."
   end
 
   def turn(i)

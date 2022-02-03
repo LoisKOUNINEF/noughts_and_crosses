@@ -49,5 +49,6 @@ class Board
         victory = 2
       end
     end
+    return victory
   end
 end
