@@ -13,3 +13,5 @@
   name of the square you want to fill (i.e A1,C3...) but the position of the
   square from 1 to 9 (e.g. A1 = 1, C3 = 9). Thanks for reading, and I hope
   you'll enjoy playing! Peace
+
+  !!!! DON'T FORGET TO BUNDLE INSTALL ;) !!!!
