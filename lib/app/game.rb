@@ -45,7 +45,7 @@ class Game
       puts "\s"*6 + "This square is already filled or doesn't exist."
       puts "\s"*6 + "Which square would you like to fill ?"
       puts "\s"*6 + "Choose a number between 1 and 9 (square A1 = 1 and so on)."
-      choice = gets.chomp.to_"\s"*6 + i
+      choice = gets.chomp.to_i
     end
     @board.play(choice, @players[n].symbol)
     @board.display_board
