@@ -7,12 +7,22 @@ class Game
     puts "\s"*6 + "What's the first player's name ?"
     print "\s"*6 + ">"
     player1_name = gets.chomp
+    while player1_name.empty?
+      puts "Please enter the first player's name :"
+      print "\s"*6 + ">"
+      player1_name = gets.chomp
+    end
     player1 = Player.new(player1_name , "X")
     puts "\n"
 
     puts "\s"*6 + "What's the second player's name ?"
     print "\s"*6 + ">"
     player2_name = gets.chomp
+        while player2_name.empty?
+      puts "Please enter the second player's name :"
+      print "\s"*6 + ">"
+      player2_name = gets.chomp
+    end
     player2 = Player.new(player2_name , "O")
     puts "\n"
 
