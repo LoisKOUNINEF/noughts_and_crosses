@@ -8,7 +8,7 @@ class Game
     print "\s"*6 + ">"
     player1_name = gets.chomp
     while player1_name.empty?
-      puts "Please enter the first player's name :"
+      puts "\s"*6 + "Please enter the first player's name :"
       print "\s"*6 + ">"
       player1_name = gets.chomp
     end
@@ -18,8 +18,8 @@ class Game
     puts "\s"*6 + "What's the second player's name ?"
     print "\s"*6 + ">"
     player2_name = gets.chomp
-        while player2_name.empty?
-      puts "Please enter the second player's name :"
+    while player2_name.empty?
+      puts "\s"*6 + "Please enter the second player's name :"
       print "\s"*6 + ">"
       player2_name = gets.chomp
     end
@@ -39,13 +39,12 @@ class Game
         puts "\s"*6 + "#{@players[0].name} wins !"
       elsif @board.victory? == 2
         puts "\s"*6 + "#{@players[1].name} wins !"
-      else
-        puts "\s"*6 + "Draw."
       end
     end
-  end
+     #puts "\s"*6 + "Draw."
+   end
 
-  def turn(i)
+   def turn(i)
     n = i % 2
     puts "\s"*6 + "#{players[n].name}, which square would you like to fill ?"
     puts "\s"*6 + "Choose a number between 1 and 9 (square A1 = 1 and so on)."
